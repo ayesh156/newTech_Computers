@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search | newTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="resource/logo.svg" />
+</head>
+
+<body style="background-color: #121212;">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- header start-->
+
+            <div class="col-12 bg-dark">
+                <div class="row mt-1 mb-1">
+
+
+                    <div class="offset-lg-1 col-12 col-lg-3 align-self-start mt-2">
+
+                        <img src="resources/logo.png" style="height: 25px;" onclick="window.location='index.html'">
+                        <a href="signupLogin.html" class="text-lg-start text-primary text-decoration-none"
+                            style="cursor: pointer;">Sign In or Register</a>
+                        <span class="text-lg-start text-white"> | Help and Contact</span>
+
+                    </div>
+
+                    <div class="offset-lg-4 mt-2 mt-lg-0 col-12 col-lg-3 align-self-end">
+                        <div class="row">
+
+                            <div class="col-2 col-lg-3 mt-2">
+                                <span class="text-start text-white">Sell</span>
+                            </div>
+
+                            <div class="col-3 col-lg-5 dropdown">
+                                <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My newTech
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="myProduct.html">My Products</a></li>
+                                    <li><a class="dropdown-item" href="watchlist.html">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="purchasedHistory.html">Purchase History</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-1 col-lg-3 ms-lg-4 mt-1 cart-icon" style="margin-left: 80px;"
+                                onclick="window.location='cart.html'"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- header end-->
+
+            <div class="col-12 bg-success mb-2">
+                <div class="row">
+                    <div class="offset-md-4 col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="mt-2 mb-2 logo" style="height: 80px;"></div>
+                            </div>
+                            <div class="col-10 text-center">
+                                <p class="fs-1 txt4 fw-bold mt-3 pt-2">Advanced Search</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offset-md-2 col-12 col-md-8 rounded mb-2" style="background-color: #24262c;">
+                <div class="row">
+                    <div class="offset-md-1 col-12 col-md-10">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-1">
+                                <input type="text" class="form-control input txt3"
+                                    placeholder="Type Keyword to search..." id="t" />
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mb-1">
+                                <input type="text" class="form-control input txt3" placeholder="Price From..."
+                                    id="pf" />
+                            </div>
+
+                            <div class="col-12 col-md-6 mt-2 mb-1">
+                                <input type="text" class="form-control input txt3" placeholder="Price To..." id="pt" />
+                            </div>
+
+                            <div class="col-12">
+                                <hr class="border border-3 border-warning" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-md-1 col-12 col-md-10">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="row">
+
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <select
+                                            class="form-select text-center bg-secondary  text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">Select Category
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Laptops</option>
+                                            <option class="fw-bold" style="font-family: verdana;">Tablets</option>
+                                            <option class="fw-bold" style="font-family: verdana;">Game Consoles
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <select
+                                            class="form-select text-center bg-secondary  text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">Select Brand
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Acer</option>
+                                            <option class="fw-bold" style="font-family: verdana;">MSI</option>
+                                            <option class="fw-bold" style="font-family: verdana;">Apple</option>
+                                            <option class="fw-bold" style="font-family: verdana;">ASUS</option>
+                                            <option class="fw-bold" style="font-family: verdana;">Samsung</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <select
+                                            class="form-select text-center bg-secondary text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">Select Model
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Galaxy Tab S8+
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Aspire 5</option>
+                                            <option class="fw-bold" style="font-family: verdana;">PlayStation 4
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <select
+                                            class="form-select text-center bg-secondary text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">Select Condition
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">New
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Used</option>
+
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <select
+                                            class="form-select text-center bg-secondary  text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">Select
+                                                Colour
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Gold
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Silver
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">Graphite
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-1">
+                                        <select
+                                            class="form-select text-center bg-secondary  text-warning border-0 border-bottom border-warning">
+                                            <option class="fw-bold" style="font-family: verdana;">SORT BY</option>
+                                            <option class="fw-bold" style="font-family: verdana;">PRICE HIGH TO LOW
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">PRICE HIGH TO LOW
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">QUANTITY HIGH TO LOW
+                                            </option>
+                                            <option class="fw-bold" style="font-family: verdana;">QUANTITY LOW TO HIGH
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <hr class="border border-3 border-warning" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="offset-4 offset-md-7 col-8 col-md-3 rounded mb-2" style="background-color: #24262c;">
+                <div class="row">
+                    <div class="col-12 mb-2 mt-2 d-grid">
+                        <button class="btn btn-3">Advanced Search</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- product start -->
+
+            <div class="col-12 offset-md-2 col-md-8 mt-3 mb-3" style="background-color: #24262c;">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="row justify-content-center">
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/Aspire-5.jpg"
+                                                            class="card-img-top img-thumbnail mt-4"
+                                                            style="max-height: 250px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">Aspire 5</h5>
+                                                        <span class="text-warning">Rs. 400000.00</span> <br />
+                                                        <span class="txt">11 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end -->
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/Katana-GF66.jpg"
+                                                            class="card-img-top img-thumbnail mt-2"
+                                                            style="max-height: 400px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">Katana GF66</h5>
+                                                        <span class="text-warning">Rs. 700000.00</span> <br />
+                                                        <span class="txt">11 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card end -->
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/Galaxy-Tab-S8+.jpg"
+                                                            class="card-img-top img-thumbnail mt-4"
+                                                            style="max-height: 400px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">Galaxy Tab S8</h5>
+                                                        <span class="text-warning">Rs. 400000.00</span> <br />
+                                                        <span class="txt">13 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- card end -->
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/iPad-Pro-12.9.jpg"
+                                                            class="card-img-top img-thumbnail mt-4"
+                                                            style="max-height: 400px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">iPad Pro 12.9</h5>
+                                                        <span class="text-warning">Rs. 420000.00</span> <br />
+                                                        <span class="txt">3 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- card end -->
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/PlayStation-4.jpg"
+                                                            class="card-img-top img-thumbnail mt-4"
+                                                            style="max-height: 400px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">PlayStation 4</h5>
+                                                        <span class="text-warning">Rs. 420000.00</span> <br />
+                                                        <span class="txt">8 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- card end -->
+
+                            <!-- card start -->
+
+                            <div class="mb-3 mt-3 col-10 col-lg-5">
+                                <div class="row">
+
+                                    <div class="con">
+                                        <div class="card" style="height: 470px;">
+                                            <div class="box">
+                                                <div class="content text-center"
+                                                    style="background-image: url('resources/advanced-bg.jpg');">
+                                                    <div class="inner">
+                                                        <img src="resources/products/PlayStation-VR.jpg"
+                                                            class="card-img-top img-thumbnail mt-4"
+                                                            style="max-height: 400px;max-width: 240px;" />
+                                                        <h5 class="text-white mt-3 fs-4">PlayStation VR</h5>
+                                                        <span class="text-warning">Rs. 900000.00</span> <br />
+                                                        <span class="txt">4 Items Available</span><br />
+                                                        <button class="col-12 flip-btn fbb1 mt-2"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                        <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offset-2 offset-lg-3 col-8 col-lg-6 text-center mb-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- product end -->
+
+
+            <footer class="bg-dark text-white pb-5 pt-4">
+
+                <div class="col-12 container text-md-left">
+                    <div class="row text-center text-md-left">
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">new Tech Computers</h5>
+                            <p class="txt">Your number one source for all things tech. We're dedicated to giving you the
+                                very best of computer parts, with a focus on quality, price, brand. </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">Products</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Laptops</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Tablets</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Game Consoles</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Brands</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> MSI</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Apple</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> ASUS</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Samsung</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Contacts</h5>
+                            <p>
+                                <i class="fas fa-home mr-3"></i><span class="txt"> No.1, Colombo 8, Sri Lanka</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i><span class="txt"> newtechcomputer@gmail.com</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i><span class="txt"> +94 117 435 435</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i><span class="txt"> +94 118 475 475</span>
+                            </p>
+                        </div>
+
+                        <hr class="mb-4" />
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-7 col-lg-8">
+                                <p class="txt"> Copyright &copy;2022 All rights reserved by:
+                                    <a href="#" class="text-decoration-none">
+                                        <strong class="text-warning">newTech Computers</strong>
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-md-5 col-lg-4">
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

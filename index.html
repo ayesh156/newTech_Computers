@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | newTech</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="resources/logo.png" />
+</head>
+
+<body style="background-color: #121212;">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- header start-->
+
+            <div class="col-12 bg-dark">
+                <div class="row mt-1 mb-1">
+
+                    <div class="offset-lg-1 col-12 col-lg-3 align-self-start mt-2">
+
+                        <img src="resources/logo.png" style="height: 25px;" onclick="window.location='index.html'">
+                        <a href="signupLogin.html" class="text-lg-start text-primary text-decoration-none"
+                            style="cursor: pointer;">Sign In or Register</a>
+                        <span class="text-lg-start text-white"> | Help and Contact</span>
+
+                    </div>
+
+                    <div class="offset-lg-4 mt-2 mt-lg-0 col-12 col-lg-3 align-self-end">
+                        <div class="row">
+
+                            <div class="col-2 col-lg-3 mt-2">
+                                <span class="text-start text-white">Sell</span>
+                            </div>
+
+                            <div class="col-3 col-lg-5 dropdown">
+                                <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My newTech
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="myProduct.html">My Products</a></li>
+                                    <li><a class="dropdown-item" href="watchlist.html">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="purchasedHistory.html">Purchase History</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-1 col-lg-3 ms-lg-4 mt-1 cart-icon" style="margin-left: 80px;"
+                                onclick="window.location='cart.html'"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- header end-->
+
+            <hr />
+
+            <div class="col-12 justify-content-center">
+                <div class="row mb-3">
+
+                    <div class="offset-4 offset-lg-1 col-4 col-lg-1 logo" style="height: 60px;"></div>
+
+                    <div class="col-12 col-lg-6">
+
+                        <div class="input-group mt-3 mb-3">
+                            <span class="input rounded-start"><i
+                                    class="fa fa-search text-black-50 fs-3 mt-1 ms-1 mb-1 me-2"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control input border-0 rounded-0"
+                                aria-label="Text input with dropdown button" placeholder="Search for anything" value="">
+
+                            <select class="form-select bg-secondary text-white border-secondary"
+                                style="max-width: 290px;">
+                                <option class="fw-bold" style="font-family: verdana;">All Categories</option>
+                                <option class="fw-bold" style="font-family: verdana;">Laptops</option>
+                                <option class="fw-bold" style="font-family: verdana;">Tablets</option>
+                                <option class="fw-bold" style="font-family: verdana;">Game Consoles</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-grid">
+                        <button class="btn btn1 mt-3 mb-3">Search</button>
+                    </div>
+
+                    <div class="col-12 col-lg-2 mt-2 mt-lg-4 text-center text-lg-start">
+                        <a href="#" class="link-info text-decoration-none" onclick="window.location='advancedSearch.html'">Advanced</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="col-12">
+                <div class="row">
+
+                    <!-- carousel -->
+
+                    <div class="col-12 d-none d-lg-block mb-3">
+                        <div class="row">
+
+                            <div id="carouselExampleDark" class="offset-2 col-8 carousel carousel-dark slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                        aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                                        aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <img src="resources/slider images/msi_1.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="resources/slider images/msi_2.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="resources/slider images/msi_all.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="resources/slider images/apple_1.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="resources/slider images/msi_4.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="resources/slider images/apple_2.jpg" class="d-block poster-img-1"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- carousel -->
+
+                    <!-- category name -->
+
+                    <div class="col-12 text-center mt-3 mb-3">
+                        <a href="#" class="text-decoration-none link-secondary fs-3 text-white">Laptops</a> &nbsp;&nbsp;
+                        <button href="#" class="btn btn-light text-dark fs-6 text-secondary">See All &nbsp;
+                            &rarr;</button>
+                    </div>
+
+                    <!-- category name -->
+
+                    <!-- Products -->
+
+                    <div class="col-10 offset-1 col-lg-10 mb-3">
+                        <div class="row border border-2 border-warning">
+
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Aspire-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 150px;max-width: 210px;" />
+                                                    <h5 class="text-white mt-3">Aspire 5 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        400000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">11 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Aspire-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/MacBook-Air.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 150px;max-width: 210px;" />
+                                                    <h5 class="text-white mt-3">MacBook Air <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        800000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">9 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/MacBook-Air.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Latitude-7420.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Latitutde 7420 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        100000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">18 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Latitude-7420.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Katana-GF66.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Katana GF66 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        700000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">14 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Katana-GF66.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+
+                    <!-- category name -->
+
+                    <div class="col-12 text-center mt-3 mb-3">
+                        <a href="#" class="text-decoration-none link-secondary fs-3 text-white">Tablets</a> &nbsp;&nbsp;
+                        <button href="#" class="btn btn-light text-dark fs-6 text-secondary">See All &nbsp;
+                            &rarr;</button>
+                    </div>
+
+                    <!-- category name -->
+
+                    <!-- Products -->
+
+                    <div class="col-10 offset-1 col-lg-10 mb-3">
+                        <div class="row border border-2 border-warning">
+
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Galaxy-Tab-S8+.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Galaxy Tab S8+ <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        250000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">13 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Galaxy-Tab-S8+.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Surface-Pro-8.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Surface Pro 8 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        600000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">5 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Surface-Pro-8.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Xiaomi-pad-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Xiaomi pad 5 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        350000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">7 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Xiaomi-pad-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/iPad-Pro-12.9.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">iPad Pro 12.9 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        420000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">3 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/iPad-Pro-12.9.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+
+                    <!-- category name -->
+
+                    <div class="col-12 text-center mt-3 mb-3">
+                        <a href="#" class="text-decoration-none link-secondary fs-3 text-white">Game Consoles</a>
+                        &nbsp;&nbsp;
+                        <button href="#" class="btn btn-light text-dark fs-6 text-secondary">See All &nbsp;
+                            &rarr;</button>
+                    </div>
+
+                    <!-- category name -->
+
+                    <!-- Products -->
+
+                    <div class="col-10 offset-1 col-lg-10 mb-3">
+                        <div class="row border border-2 border-warning">
+
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/PlayStation-4.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">PlayStation 4 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        500000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">8 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/PlayStation-4.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/PlayStation-VR.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">PlayStation VR <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        900000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">4 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/PlayStation-VR.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Xbox-Series-X.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Xbox Series X <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        650000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">12 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Xbox-Series-X.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                    <!-- card start-->
+
+                                    <div class="box-item col-md-3 mt-2 mb-2"
+                                        style="min-width: 300px; max-width: 400px;">
+                                        <div class="flip-box">
+                                            <div class="flip-box-front text-center"
+                                                style="background-image: url('resources/card_img2.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Playstation-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <h5 class="text-white mt-3">Playstation 5 <span
+                                                            class="badge bg-info">New</span></h5>
+                                                    <span class="fw-bold flip-box-header text-warning">Rs.
+                                                        750000.00</span> <br />
+                                                    <span class="text-primary">In Stock</span> <br />
+                                                    <span class="txt">15 Items Available</span><br /><br />
+                                                    <i class="bi bi-arrow-right-circle flip-box-icon text-white"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="flip-box-back text-center"
+                                                style="background-image: url('resources/card_img.jpg');">
+                                                <div class="inner">
+                                                    <img src="resources/products/Playstation-5.jpg"
+                                                        class="card-img-top img-thumbnail mt-2"
+                                                        style="max-height: 180px;max-width: 220px;" />
+                                                    <button class="col-12 flip-btn fbb1 mt-4"
+                                                        onclick="window.location='singleProductView.html'">Buy
+                                                        Now</button>
+                                                    <button class="col-12 flip-btn fbb2 mt-2">Add to Cart</button>
+                                                    <button class="col-12 flip-btn fbb3 mt-2"><i
+                                                            class="bi bi-heart-fill fs-3"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end-->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+
+                </div>
+            </div>
+
+            <footer class="bg-dark text-white pb-5 pt-4">
+
+                <div class="col-12 container text-md-left">
+                    <div class="row text-center text-md-left">
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">new Tech Computers</h5>
+                            <p class="txt">Your number one source for all things tech. We're dedicated to giving you the
+                                very best of computer parts, with a focus on quality, price, brand. </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">Products</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Laptops</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Tablets</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Game Consoles</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Brands</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> MSI</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Apple</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> ASUS</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Samsung</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Contacts</h5>
+                            <p>
+                                <i class="fas fa-home mr-3"></i><span class="txt"> No.1, Colombo 8, Sri Lanka</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i><span class="txt"> newtechcomputer@gmail.com</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i><span class="txt"> +94 117 435 435</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i><span class="txt"> +94 118 475 475</span>
+                            </p>
+                        </div>
+
+                        <hr class="mb-4" />
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-7 col-lg-8">
+                                <p class="txt"> Copyright &copy;2022 All rights reserved by:
+                                    <a href="#" class="text-decoration-none">
+                                        <strong class="text-warning">newTech Computers</strong>
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-md-5 col-lg-4">
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products | newTech</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="resources/logo.png" />
+</head>
+
+<body style="background-color: #121212;">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- header start-->
+
+            <div class="col-12 bg-dark">
+                <div class="row mt-1 mb-1">
+
+
+                    <div class="offset-lg-1 col-12 col-lg-3 align-self-start mt-2">
+
+                        <img src="resources/logo.png" style="height: 25px;" onclick="window.location='index.html'">
+                        <a href="signupLogin.html" class="text-lg-start text-primary text-decoration-none"
+                            style="cursor: pointer;">Sign In or Register</a>
+                        <span class="text-lg-start text-white"> | Help and Contact</span>
+
+                    </div>
+
+                    <div class="offset-lg-4 mt-2 mt-lg-0 col-12 col-lg-3 align-self-end">
+                        <div class="row">
+
+                            <div class="col-2 col-lg-3 mt-2">
+                                <span class="text-start text-white">Sell</span>
+                            </div>
+
+                            <div class="col-3 col-lg-5 dropdown">
+                                <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My newTech
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="myProduct.html">My Products</a></li>
+                                    <li><a class="dropdown-item" href="watchlist.html">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="purchasedHistory.html">Purchase History</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-1 col-lg-3 ms-lg-4 mt-1 cart-icon" style="margin-left: 80px;"
+                                onclick="window.location='cart.html'"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- header end-->
+
+            <!-- header start -->
+            <div class="col-12 bg-secondary">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mt-1 mb-1 text-center">
+                                <img src="resources/user.jpg" class="rounded-circle" width="90px" height="90px" />
+
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="row text-center text-lg-start">
+                                    <div class="col-12 mt-0 mt-lg-4">
+                                        <span class="text-white">Ayesh Chathuranga</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="text-black-50">ayesh@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-lg-10 mt-2 my-lg-4">
+                                <h1 class="text-center offset-lg-2 text-lg-start text-white">My Products</h1>
+                            </div>
+                            <div class="col-12 col-lg-2 my-lg-4 mb-2 pt-3 mx-2 mx-lg-0 d-grid">
+                                <button class="btn btn-primary text-white"
+                                    onclick="window.location='addProduct.html' ">Add Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header end -->
+
+            <!-- body start -->
+            <div class="col-12">
+                <div class="row">
+
+                    <!-- filter start -->
+                    <div class="col-11 col-lg-2 mx-3 my-3 border border-2 border-primary rounded"
+                        style="height: 670px;background-color: #24262c;">
+                        <div class="row">
+                            <div class="col-12 mt-3 fs-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="form-label fs-4 text-white">Sort Products</label>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <input type="text" placeholder="Search..."
+                                                    class="form-control input border-0" id="s">
+                                            </div>
+                                            <div class="col-1 p-1">
+                                                <label class="form-label txt"><i class="bi bi-search fs-5"></i></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label text-white">Active Time</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr style="width: 80%;" />
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r1" id="n">
+                                            <label class="form-check-label text-warning" for="n">
+                                                Newest to oldest
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r1" id="o">
+                                            <label class="form-check-label text-warning" for="o">
+                                                Oldest to newest
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <label class="form-label text-white">By Quantity</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr style="width: 80%;" />
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r2" id="h">
+                                            <label class="form-check-label text-warning" for="n">
+                                                High to low
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r2" id="l">
+                                            <label class="form-check-label text-warning" for="o">
+                                                Low to high
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <label class="form-label text-white">By Condition</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr style="width: 80%;" />
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r3" id="b">
+                                            <label class="form-check-label text-warning" for="n">
+                                                BrandNew
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input input" type="radio" name="r3" id="u">
+                                            <label class="form-check-label text-warning" for="o">
+                                                Used
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-3 mb-3">
+                                        <div class="row g-2">
+                                            <div class="col-12 col-lg-6 d-grid">
+                                                <button class="btn btn1">Sort</button>
+                                            </div>
+                                            <div class="col-12 col-lg-6 d-grid">
+                                                <button class="btn btn-red">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filter end -->
+
+                    <!-- product start -->
+
+                    <div class="col-12 col-lg-9 mt-3 mb-3" style="background-color: #24262c;">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="row justify-content-center">
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/Aspire-5.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 250px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">Aspire 5</h5>
+                                                                <span class="text-warning">Rs. 400000.00</span> <br />
+                                                                <span class="txt">11 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/Katana-GF66.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 400px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">Katana GF66</h5>
+                                                                <span class="text-warning">Rs. 700000.00</span> <br />
+                                                                <span class="txt">11 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end -->
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/Galaxy-Tab-S8+.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 400px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">Galaxy Tab S8</h5>
+                                                                <span class="text-warning">Rs. 400000.00</span> <br />
+                                                                <span class="txt">13 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- card end -->
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/iPad-Pro-12.9.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 400px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">iPad Pro 12.9</h5>
+                                                                <span class="text-warning">Rs. 420000.00</span> <br />
+                                                                <span class="txt">3 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- card end -->
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/PlayStation-4.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 400px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">PlayStation 4</h5>
+                                                                <span class="text-warning">Rs. 420000.00</span> <br />
+                                                                <span class="txt">8 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- card end -->
+
+                                    <!-- card start -->
+
+                                    <div class="mb-3 mt-3 col-10 col-lg-5">
+                                        <div class="row">
+
+                                            <div class="con">
+                                                <div class="card" style="height: 470px;">
+                                                    <div class="box">
+                                                        <div class="content text-center"
+                                                            style="background-image: url('resources/card-bg.jpg');">
+                                                            <div class="inner">
+                                                                <img src="resources/products/PlayStation-VR.jpg"
+                                                                    class="card-img-top img-thumbnail mt-4"
+                                                                    style="max-height: 400px;max-width: 240px;" />
+                                                                <h5 class="text-white mt-3 fs-4">PlayStation VR</h5>
+                                                                <span class="text-warning">Rs. 900000.00</span> <br />
+                                                                <span class="txt">4 Items Available</span><br />
+                                                                <div
+                                                                    class="form-check form-switch offset-1 offset-lg-2 col-10 col-lg-8">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        role="switch">
+                                                                    <label class="form-check-label txt2" for="">Make
+                                                                        Your Product Active</label>
+                                                                </div>
+                                                                <button onclick="window.location='updateProduct.html' "
+                                                                    class="col-5 col-lg-4 card-btn cbb1 mt-3">Update</button>
+                                                                <button
+                                                                    class="col-5 col-lg-4 card-btn cbb2 mt-2">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- card end -->
+
+                                </div>
+                            </div>
+
+                            <!-- pagination start -->
+
+                            <div class="offset-2 offset-lg-3 col-8 col-lg-6 text-center mb-3">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-lg justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <!-- pagination end -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- product end -->
+
+
+            </div>
+            <!-- body end -->
+
+            <footer class="bg-dark text-white pb-5 pt-4">
+
+                <div class="col-12 container text-md-left">
+                    <div class="row text-center text-md-left">
+
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">new Tech Computers</h5>
+                            <p class="txt">Your number one source for all things tech. We're dedicated to giving you the
+                                very best of computer parts, with a focus on quality, price, brand. </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning">Products</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Laptops</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Tablets</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Game Consoles</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Brands</h5>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> MSI</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Apple</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> ASUS</a>
+                            </p>
+                            <p>
+                                <a href="#" class="txt text-decoration-none"> Samsung</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 text-warning"> Contacts</h5>
+                            <p>
+                                <i class="fas fa-home mr-3"></i><span class="txt"> No.1, Colombo 8, Sri Lanka</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i><span class="txt"> newtechcomputer@gmail.com</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i><span class="txt"> +94 117 435 435</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i><span class="txt"> +94 118 475 475</span>
+                            </p>
+                        </div>
+
+                        <hr class="mb-4" />
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-7 col-lg-8">
+                                <p class="txt"> Copyright &copy;2022 All rights reserved by:
+                                    <a href="#" class="text-decoration-none">
+                                        <strong class="text-warning">newTech Computers</strong>
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-md-5 col-lg-4">
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn-sm text-white me-2" style="font-size: 23px;"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        </footer>
+
+    </div>
+
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
